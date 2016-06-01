@@ -1,0 +1,46 @@
+footer {
+	background-color: #373737; 
+	color: white;
+	padding-bottom: 60px; 
+	
+	li {
+		display: inline-block;
+	}
+	
+	.menu-footer {
+		@extend %main-menu;	
+	}
+	
+	nav {
+		float: right;
+
+		a {
+			@extend %main-nav-link;
+		}
+	}
+
+	.logo {
+		@extend %logo;
+	}
+	
+	.footer-links {
+		margin: 52px 0 20px;
+		text-align: left;
+		font-size: 12px;
+		  
+		li {
+			padding-right: 15px;
+		}
+
+		a:hover {
+			color: $primary-color;
+		}
+	} 
+
+	p {
+		color: #7e7e7e;
+		font-size: 12px;
+	 	line-height: 20px;
+	 	text-align: left; 
+	}
+}

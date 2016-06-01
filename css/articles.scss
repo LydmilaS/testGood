@@ -1,0 +1,51 @@
+.articles {
+	overflow: hidden;
+	padding: 15px 0 20px;
+	
+	.articles-slider-container {
+		position: relative;
+	}
+	 
+	.zoom {
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: white;
+	    font-size: 42px;
+    	padding: 5px 20px;
+	}
+	
+	.articles-slide-item {
+		position: relative;
+		text-align: left;
+		background-color: white;
+		padding-bottom: 45px; 
+		
+
+		h2 {
+		    padding: 20px 28px 12px;
+		    font-size: 26px;
+		    line-height: 30px;
+		}
+
+		p {
+			padding: 0 28px;
+		    font-size: 12px;
+		    line-height: 26px;
+		}
+	}
+
+	a {
+	    position: absolute;
+	    font-size: 70px;
+	    top: 40%;
+	    
+	    &.lSPrev {
+	    	left: -5%;
+	    }
+
+	    &.lSNext {
+	    	right: -5%; 
+	    }
+	}
+}
