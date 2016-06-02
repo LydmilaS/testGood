@@ -15,12 +15,12 @@ footer {
 		float: right;
 		
 		@include breakpoint(max-width, 767px) {
-                display: none;
-            }
+            display: none;
+        }
 
 		a {
 			@extend %main-nav-link;
-			padding: 30px 24px 25px;
+			padding: 30px 24px 23px;
 		}
 
 		li:last-child  a:after {
@@ -34,8 +34,7 @@ footer {
 	
 	.footer-links {
 		margin: 52px 0 20px;
-		text-align: left;
-		font-size: 12px;
+		font-size: $main-font; 
 		  
 		li {
 			padding-right: 15px;
@@ -48,8 +47,7 @@ footer {
 
 	p {
 		color: #7e7e7e;
-		font-size: 12px;
+		font-size: $main-font;
 	 	line-height: 20px;
-	 	text-align: left; 
 	}
 }

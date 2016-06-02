@@ -1,19 +1,22 @@
 .someEntry {
     background-color: white;
     padding: 31px 50px 80px;
-    text-align: left;
     margin-bottom: 23px;
-    position: relative;
-    
-    
+
     p {
-	    font-size: 12px;
+    	color: $content-block;
+	    font-size: $main-font;
 	    line-height: 21px;
+	    
+	    & > span {
+	    	color: red;
+		}
 	}
     
     h2 {
-	    font-size: 30px;
+	    font-size: 3rem;
 	    margin-bottom: 26px;
+	    color: $title-color;
 	    
 	    &+p {
 		    line-height: 26px;

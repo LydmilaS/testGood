@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="js/lightslider.js"></script>
-	<link type="text/css" rel="stylesheet" href="css/lightslider.css" />   
+     <script src="js/topmenu.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/lightslider.css" /> 
 	<link href="css/style.css" rel="stylesheet">
-    <script src="js/topmenu.js"></script>
 </head>
 <body>
     <header>
@@ -125,74 +125,74 @@
 				</div>
 			</div>
 			<script>
-	    	 $(document).ready(function() {
-	            $('#portfolio-slider').lightSlider({
-	                gallery:true,
-	                item:1,
-	                thumbItem:0,
-	                slideMargin: 0,
-	                speed:400,
-	                sliderContainer:'.portfolio-slider-container',
-	                pauseOnHover: true,
-	                auto:true,
-	                loop:true,
-	                pause: 5000,
-	                pager: false,
-	                onSliderLoad: function() {
-	                    $('#portfolio-slider').removeClass('cS-hidden');
-	                }  
-	            });
-			});
-	    </script>
+	    	    $(document).ready(function() {
+		            $('#portfolio-slider').lightSlider({
+		                gallery:true,
+		                item:1,
+		                thumbItem:0,
+		                slideMargin: 0,
+		                speed:400,
+		                sliderContainer:'.portfolio-slider-container',
+		                pauseOnHover: true,
+		                auto:true,
+		                loop:true,
+		                pause: 5000,
+		                pager: false,
+		                onSliderLoad: function() {
+		                    $('#portfolio-slider').removeClass('cS-hidden');
+		                }  
+		            });
+				});
+	    	</script>
 		</div>
 	</section>
 	<section class="articles">
 		<div class="container">
-		<div class="articles-slider-container">
-			<ul id="articles-slider">
-				<li class="articles-slide-item">
-					<img src="images/article1.jpg" alt="">
-					<h2>Taste & Sounds from Thailand</h2>
-					<p>We've made some small changes to BlazRobar.com...</p>
-					<div class="zoom">&#43;</div>
-				</li>
-				<li class="articles-slide-item">
-					<img src="images/article2.jpg" alt="">
-					<h2>BlazRobar.com is awesome for PSD</h2>
-					<p>We've made some small changes to BlazRobar.com...</p>
-					<div class="zoom">&#43;</div>
-				</li>
-				<li class="articles-slide-item">
-					<img src="images/article3.jpg" alt="">
-					<h2>Nice Looking Mountains Ah?</h2>
-					<p>We've made some small changes to BlazRobar.com...</p>
-					<div class="zoom">&#43;</div>
-				</li>
-				<li class="articles-slide-item">
-					<img src="images/article4.jpg" alt="">
-					<h2>BlazRobar.com is awesome for PSD</h2>
-					<p>We've made some small changes to BlazRobar.com...</p>
-					<div class="zoom">&#43;</div>
-				</li>
-				<li class="articles-slide-item">
-					<img src="images/article2.jpg" alt="">
-					<h2>BlazRobar.com is awesome for PSD</h2>
-					<p>We've made some small changes to BlazRobar.com...</p>
-					<div class="zoom">&#43;</div>
-				</li>
-				<li class="articles-slide-item">
-					<img src="images/article3.jpg" alt="">
-					<h2>BlazRobar.com is awesome for PSD</h2>
-					<p>We've made some small changes to BlazRobar.com...</p>
-					<div class="zoom">&#43;</div>
-				</li>
-			</ul>
-			<div class="lSAction">
+			<div class="articles-slider-container">
+				<ul id="articles-slider">
+					<li class="articles-slide-item">
+						<img src="images/article1.jpg" alt="">
+						<h2>Taste & Sounds from Thailand</h2>
+						<p>We've made some small changes to BlazRobar.com...</p>
+						<div class="zoom"></div>
+					</li>
+					<li class="articles-slide-item">
+						<img src="images/article2.jpg" alt="">
+						<h2>BlazRobar.com is awesome for PSD</h2>
+						<p>We've made some small changes to BlazRobar.com...</p>
+						<div class="zoom"></div>
+					</li>
+					<li class="articles-slide-item">
+						<img src="images/article3.jpg" alt="">
+						<h2>Nice Looking Mountains Ah?</h2>
+						<p>We've made some small changes to BlazRobar.com...</p>
+						<div class="zoom"></div>
+					</li>
+					<li class="articles-slide-item">
+						<img src="images/article4.jpg" alt="">
+						<h2>BlazRobar.com is awesome for PSD</h2>
+						<p>We've made some small changes to BlazRobar.com...</p>
+						<div class="zoom"></div>
+					</li>
+					<li class="articles-slide-item">
+						<img src="images/article2.jpg" alt="">
+						<h2>BlazRobar.com is awesome for PSD</h2>
+						<p>We've made some small changes to BlazRobar.com...</p>
+						<div class="zoom"></div>
+					</li>
+					<li class="articles-slide-item">
+						<img src="images/article3.jpg" alt="">
+						<h2>BlazRobar.com is awesome for PSD</h2>
+						<p>We've made some small changes to BlazRobar.com...</p>
+						<div class="zoom"></div>
+					</li>
+				</ul>
+				<div class="lSAction">
 					<a class="lSPrev"><i class="fa fa-angle-left"></i></a>
 					<a class="lSNext"><i class="fa fa-angle-right"></i></a>
 				</div>
-			<script type="text/javascript">
-				  $(document).ready(function() {
+				<script type="text/javascript">
+				    $(document).ready(function() {
 			            $('#articles-slider').lightSlider({
 			                loop:true,
                 			keyPress:true,
@@ -201,94 +201,94 @@
                 			sliderContainer: '.articles-slider-container'
 			            });
 					});
-			    </script>
-
-				
+			    </script>				
 			</div>
 		</div>
 	</section>
 	<div class="container wrap">
 		<div class="main-contant">
-	<section class="someEntry">
-			<h2>Nice text bosage here</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat neque asperiores. Quam mollitia, blanditiis vero at eaque incidunt. </p>
-			<a href="#">Check leo dignissim+</a>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod laboriosam deleniti beatae, quia, iusto <span>ipsum primis in faucibus orci</span>eos mollitia in eveniet magni nam tenetur nobis eligendi provident dolorum dolores, voluptatibus doloribus placeat deserunt. In eveniet magni nam tenetur nobis eligendi provident dolorum dolores, voluptatibus doloribus placeat deserunt, eligendi provident dolorum dolores, voluptatibus doloribus placeat deserunt</p>
-			<button class="add"> &#43;</button>
-			<footer>
-				<span class="date">19th April</span>
-				<span class="like">23 <i class="fa fa-heart"></i></span>
-			</footer>
-	</section>
-	<section class="post">
-		<article>
-			<div class="img-area">
-				<img src="images/post.jpg" alt="" />
-				<div class="buttons">
-					<button class="add"> &#43;</button>
-					<button class="fa fa-angle-right"></button>
-				</div>
-			</div>
-			<div class="content">
-				<h2>I like long walks? especially when they are talken by people who really annoy me.</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat neque asperiores. Quam mollitia, blanditiis vero at eaque incidunt. </p>
+			<section class="someEntry">
+				<h2>Nice text bosage here</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat neque asperiores. Quam mollitia, blanditiis vero at eaque incidunt.
+				</p>
 				<a href="#">Check leo dignissim+</a>
-			</div>
-		</article>
-	</section>
-	</div>
-	<div class="sidebar">
-		<div class="state">
-			<div class="plus"></div>
-			<img src="images/mauntains.jpg" alt="" />
-			<h2>Nice Looking Mountains Ah?</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem deleniti odit dolores officia a distinctio, exercitationem atque minus numquam omnis at perferendis voluptatem libero id, nihil rem laudantium pariatur ex.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod laboriosam deleniti beatae, quia, iusto <span>ipsum primis in faucibus orcieos</span> mollitia in eveniet magni nam tenetur nobis eligendi provident dolorum dolores, voluptatibus doloribus placeat deserunt. In eveniet magni nam tenetur nobis eligendi provident dolorum dolores, voluptatibus doloribus placeat deserunt, eligendi provident dolorum dolores, voluptatibus doloribus placeat deserunt</p>
+				<button class="add"> &#43;</button>
+				<footer>
+					<span class="date">19th April</span>
+					<span class="like">23 <i class="fa fa-heart"></i></span>
+				</footer>
+			</section>
+			<section class="post">
+				<article>
+					<div class="img-area">
+						<img src="images/post.jpg" alt="" />
+						<div class="buttons">
+							<button class="add"> &#43;</button>
+							<button class="fa fa-angle-right"></button>
+						</div>
+					</div>
+					<div class="content">
+						<h2>I like long walks? especially when they are talken by people who really annoy me.</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat neque asperiores. Quam mollitia, blanditiis vero at eaque incidunt. </p>
+						<a href="#">Check leo dignissim+</a>
+					</div>
+				</article>
+			</section>
 		</div>
-		<ul class="sidebar-menu">
-			<li>
-				<a href="#">About Us</a>
-				<span>(Blaz Robar)</span>
-			</li>
-			<li>
-				<a href="#">How to</a>
-				<span>(Jamile Oliver)</span>
-			</li>
-			<li>
-				<a href="#">Write for us</a>
-				<span>(Bill Muarry)</span>
-			</li>
-			<li>
-				<a href="#">Video Testimonails</a>
-				<span>(John Smith)</span>
-			</li>
-		</ul>
-	</div>
+		<div class="sidebar">
+			<div class="state">
+				<img src="images/mauntains.jpg" alt="" />
+				<h2>Nice Looking Mountains Ah?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem deleniti odit dolores officia a distinctio, exercitationem atque minus numquam omnis at perferendis voluptatem libero id, nihil rem laudantium pariatur ex.</p>
+				<div class="zoom"></div>
+			</div>
+			<ul class="sidebar-menu">
+				<li>
+					<a href="#">About Us</a>
+					<span>(Blaz Robar)</span>
+				</li>
+				<li>
+					<a href="#">How to</a>
+					<span>(Jamile Oliver)</span>
+				</li>
+				<li>
+					<a href="#">Write for us</a>
+					<span>(Bill Muarry)</span>
+				</li>
+				<li>
+					<a href="#">Video Testimonails</a>
+					<span>(John Smith)</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<footer>
 		<div class="menu-footer">
-		<div class="container">
-			<div class="logo">
-				<a href="javascript:void(0);"><span>g</span>Good Inc.</a>
+			<div class="container">
+				<div class="logo">
+					<a href="javascript:void(0);"><span>g</span>Good Inc.</a>
+				</div>
+				<nav rel="nowfollow">
+			        <ul class="bottomnav">
+			           	<li><a href="javascript:void(0);" class="active">Portfolio</a>
+			           	<li><a href="javascript:void(0);">Services</a></li>
+			            <li><a href="javascript:void(0);">Staff</a></li>
+			            <li><a href="javascript:void(0);">Articles</a></li>
+			            <li><a href="javascript:void(0);">Contact</a></li>
+			        </ul>
+			    </nav>
 			</div>
-			<nav rel="nowfollow">
-		            <ul class="bottomnav">
-		            	<li><a href="javascript:void(0);" class="active">Portfolio</a>
-		            	<li><a href="javascript:void(0);">Services</a></li>
-		                <li><a href="javascript:void(0);">Staff</a></li>
-		                <li><a href="javascript:void(0);">Articles</a></li>
-		                <li><a href="javascript:void(0);">Contact</a></li>
-		            </ul>
-		        </nav>
-		    </div>
 		</div>
 		<div class="container">
-		<ul class="footer-links">
-			<li><a href="">About us</a></li>
-			<li><a href="">Footer Links here</a></li>
-			<li><a href="">Privacy</a></li>
-			<li><a href="">Page Links also</a></li>
-		</ul>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptate quo quibusdam dolorum minus dignissimos fugiat repudiandae dolor rem, adipisci nulla enim dolores natus?</p>
+			<ul class="footer-links">
+				<li><a href="">About us</a></li>
+				<li><a href="">Footer Links here</a></li>
+				<li><a href="">Privacy</a></li>
+				<li><a href="">Page Links also</a></li>
+			</ul>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptate quo quibusdam dolorum minus dignissimos fugiat repudiandae dolor rem, adipisci nulla enim dolores natus?</p>
 		</div>
 	</footer>
 </body>

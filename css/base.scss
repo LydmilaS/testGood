@@ -12,7 +12,7 @@ html {
     }
 }
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nexa', sans-serif;
     font-weight: 400;  
     background: #ebebeb; 
 }
@@ -25,7 +25,7 @@ button {
 
 .container {
     max-width: 970px;
-    text-align: center;
+    text-align: left;
     padding: 0 15px; 
     margin: 0 auto;
 }
@@ -53,11 +53,25 @@ a {
     }
 }
 
-.wrap {
+.wrap,
+.top-header,
+.about-slide,
+.articles {
     overflow: hidden;
 }
 
 .lSPrev,
 .lSNext {
     cursor: pointer;
+}
+
+.search,
+ .dropdown,
+ .portfolio-slider-container,
+ .img-block,
+ .state,
+ .articles-slider-container,
+ .img-area,
+ .someEntry {
+    position: relative;
 }

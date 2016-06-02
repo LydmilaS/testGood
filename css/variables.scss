@@ -1,36 +1,35 @@
 $primary-color: #f26c4f;
-$text-color: #b1b0b0;
-$border: 8px solid $primary-color;
-$font-paragraph-medium: 15px;
+$title-color: #707070;
+$content-block: #949494;
+$main-font: 12px;
 $bp-medium: 768px;
-$bp-large: 940px;
-$font-weight-medium: 500;
+$bp-large: 992px;
 
 %logo  {
-        font-size: 20px;
-        float: left;
+    font-size: 20px;
+    float: left;
 
-        span {
-            background-color: $primary-color;
-            padding: 5px 28px 22px;
-            display: inline-block;
-            margin-right: 20px;
-            position: relative;
-            font-size: 40px;
+    span {
+        background-color: $primary-color;
+        padding: 5px 28px 22px;
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+        font-size: 40px;
             
-            &:after {
-                content: "";
-                position: absolute;
-                top: 25%;
-                right: -15px;
-                width: 0;
-                height: 0;
-                border-top: 15px solid transparent;
-                border-bottom: 15px solid transparent;
-                border-left: 15px solid $primary-color;
-            }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 25%;
+            right: -15px;
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid $primary-color;
         }
     }
+}
 
 %main-menu {
     background-color: #474747;
@@ -43,23 +42,51 @@ $font-weight-medium: 500;
     display: block;
     text-align: center;
     transition: 0.3s;
-    padding: 30px 22px 25px;
+    padding: 30px 22px 20px;
     position: relative;
+    border-bottom: 3px solid transparent;
+    
+    &.active,
+    &:hover {
+        border-bottom-color: $primary-color; 
+    }
 
-            &.active,
-            &:hover {
-                -webkit-box-shadow: inset 0 -2px 0 0 $primary-color; 
-                box-shadow: inset 0 -4px 0 0 $primary-color; 
-            }
+    &:after {
+        content: "";
+        background-color: grey;
+        height: 18%;
+        width: 1px;
+        position: absolute;
+        right: 0;  
+    }
+}
 
-            &:after {
-                content: "";
-                background-color: grey;
-                height: 18%;
-                width: 1px;
-                position: absolute;
-                right: 0;  
-            }
+
+%zoom {
+    content: "";
+        width: 0;
+        height: 0;
+        top: 0;
+        right: 0;
+        position: absolute;  
+        border: 40px solid transparent; 
+        border-top: 40px solid black; 
+        border-right: 40px solid black;
+        
+        &:hover {
+            border-top-color: $primary-color;
+            border-right-color: $primary-color;
+            cursor: pointer;
+        }
+        
+        &:before {
+            content: "+";
+            position: absolute;
+            top: -30px;
+            right: -25px;
+            color: white;
+            font-size: 35px;        
+        }
 }
 @mixin breakpoint($feature, $value) {
     // Set global device param

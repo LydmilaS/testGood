@@ -1,13 +1,13 @@
 .sidebar {
-    text-align: left;
     color: white;
+    max-width: 300px;
+    margin: 0 auto;
     
      @include breakpoint(min-width, $bp-medium) {
         float: right;
         width: 32%; 
         margin-left: 2%; 
     }
-    
     
     .state {
     	padding-bottom: 45px; 
@@ -22,9 +22,15 @@
 
 		p {
 			padding: 0 28px;
-			font-size: 12px;
+			font-size: $main-font;
     		line-height: 24px; 
 		}
+
+        .zoom {
+            @extend %zoom;
+            border-top-color: $primary-color;
+            border-right-color: $primary-color;
+        }
     }
     
     .sidebar-menu {
@@ -32,9 +38,9 @@
     		padding: 15px 25px;
 		    margin-bottom: 5px;
 		    background-color: white;
-		    color: black;
+		    color: $title-color;
 		    border-left: 2px solid grey; 
-            font-size: 12px; 
+            font-size: 16px; 
             
             a:hover {
                 color: $primary-color;
@@ -42,8 +48,8 @@
     	}
 
     	span {
+            font-size: $main-font; 
             color: #d6d6d6;
-		    font-size: 12px;
 		    padding-left: 5px;
 		}
     }

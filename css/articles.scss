@@ -1,21 +1,24 @@
 .articles {
-	overflow: hidden;
-	padding: 15px 0 20px;
+	padding: 15px 0 70px;
 	
-	.articles-slider-container {
-		position: relative;
-	}
+	@include breakpoint(min-width, $bp-large) {
+        padding-bottom: 20px;
+    }
 	 
 	.zoom {
-		position: absolute;
-		top: 0;
-		right: 0;
-		color: white;
-	    font-size: 35px;
-    	padding: 10px 12px;
+		@extend %zoom;
 	}
 	
+	#articles-slider {
+		display: flex;
+    	flex-wrap: wrap;
+	}
+
 	.articles-slide-item {
+		flex-direction: column;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
 		position: relative;
 		text-align: left;
 		background-color: white;
@@ -23,14 +26,16 @@
 		
 
 		h2 {
+			color: $title-color;
 		    padding: 20px 28px 12px;
 		    font-size: 2.6rem;
 		    line-height: 30px;
 		}
 
 		p {
+			color: $content-block;
 			padding: 0 28px;
-		    font-size: 12px;
+		    font-size: $main-font;
 		    line-height: 26px;
 		}
 	}
@@ -38,14 +43,30 @@
 	a {
 	    position: absolute;
 	    font-size: 48px;
-	    top: 40%;
+	    top: 100%;
+	    
+	    &:hover {
+	    	color: $primary-color;
+	    }
+	    
+	    @include breakpoint(min-width, $bp-large) {
+            top: 40%;
+        }
 	    
 	    &.lSPrev {
-	    	left: -5%;
+	    	left: 40%;
+	    	
+	    	@include breakpoint(min-width, $bp-large) {
+	            left: -5%;
+	        }
 	    }
 
 	    &.lSNext {
-	    	right: -5%; 
+	    	right: 40%;
+	    	
+	    	@include breakpoint(min-width, $bp-large) {
+	            right: -5%;
+	        } 
 	    }
 	}
 }
