@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
 header .logo, footer .logo {
   font-size: 20px;
   float: left; }
@@ -48,6 +47,12 @@ header nav a, footer nav a {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 50%; }
+  @media only screen and (min-width: 768px) {
+    html {
+      font-size: 62.5%; } }
+
 body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
@@ -59,8 +64,9 @@ button {
   border: none; }
 
 .container {
-  max-width: 940px;
+  max-width: 970px;
   text-align: center;
+  padding: 0 15px;
   margin: 0 auto; }
 
 img {
@@ -75,47 +81,64 @@ a {
     text-decoration: none;
     color: inherit; }
 
-.main-contant {
-  width: 66%;
-  float: left; }
+@media only screen and (min-width: 768px) {
+  .main-contant {
+    width: 66%;
+    float: left; } }
 
 .wrap {
   overflow: hidden; }
+
+.lSPrev,
+.lSNext {
+  cursor: pointer; }
 
 header .top-header {
   background-color: #373737;
   color: white;
   overflow: hidden; }
 header .search {
-  text-align: right;
+  float: right;
   position: relative;
   padding-top: 10px; }
   header .search input {
-    padding: 14px;
-    width: 32%;
+    padding: 14px 40px 14px 14px;
     font-size: 14px; }
   header .search button {
     position: absolute;
     right: 0;
+    top: 13%;
     font-size: 28px;
     padding: 10px;
     color: #f26c4f; }
 header .main-menu .container {
   text-align: right; }
+header .main-menu .arrows button {
+  right: 10%;
+  position: absolute;
+  color: white; }
+  header .main-menu .arrows button.up {
+    top: 36%; }
+  header .main-menu .arrows button.down {
+    top: 46%; }
 header nav {
   float: left; }
   header nav li {
     display: inline-block; }
-    @media only screen and (max-width: 784px) {
+    @media only screen and (max-width: 767px) {
       header nav li {
         display: none; } }
     header nav li.icon {
       display: none; }
-      @media only screen and (max-width: 784px) {
+      @media only screen and (max-width: 767px) {
         header nav li.icon {
           float: right;
-          display: inline-block; } }
-@media only screen and (max-width: 784px) {
+          display: inline-block;
+          padding: 20px;
+          font-size: 26px; } }
+      header nav li.icon button {
+        color: #f26c4f; }
+@media only screen and (max-width: 767px) {
   header .responsive {
     position: relative; }
     header .responsive li {
@@ -130,7 +153,11 @@ header nav {
       right: 0;
       top: 0; } }
 header .quick {
-  padding-right: 16px; }
+  padding-right: 16px;
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    header .quick {
+      display: inline-block; } }
   header .quick .fa {
     font-size: 18px;
     color: #f26c4f;
@@ -152,25 +179,36 @@ header .dropdown {
   header .dropdown:before {
     left: 0; }
   header .dropdown .dropdown-content {
+    background-color: #FFF;
+    text-align: center;
+    color: black;
     display: none;
     position: absolute;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px; }
+    header .dropdown .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left; }
     header .dropdown .dropdown-content a:hover {
       cursor: pointer;
       color: red; }
-  header .dropdown:hover .dropdown-content {
-    display: block;
-    z-index: 3; }
+  header .dropdown .show {
+    display: block; }
 
 .home .soc-links {
   text-align: right; }
   .home .soc-links li {
     color: #8f8f8f;
     display: inline-block;
-    padding: 30px 0 30px 34px;
+    padding: 30px 0 30px 10px;
     font-size: 13px; }
+    @media only screen and (min-width: 768px) {
+      .home .soc-links li {
+        padding-left: 34px; } }
     .home .soc-links li a:hover {
       color: #f26c4f; }
   .home .soc-links .fa:before {
@@ -192,12 +230,16 @@ header .dropdown {
       border-bottom: 20px solid transparent;
       border-left: 20px solid #f26c4f; }
     .home .portfolio-slider-container .img-block p {
+      font-size: 1.8rem;
       position: absolute;
       bottom: 0;
       right: 0;
-      padding: 23px 70px 23px 40px;
+      padding: 10px 20px;
       color: white;
       background-color: rgba(0, 0, 0, 0.5); }
+      @media only screen and (min-width: 768px) {
+        .home .portfolio-slider-container .img-block p {
+          padding: 23px 70px 23px 40px; } }
   .home .portfolio-slider-container .about-slide {
     overflow: hidden;
     padding: 40px 30px;
@@ -208,7 +250,7 @@ header .dropdown {
     height: 390px; }
     .home .portfolio-slider-container .about-slide h2 {
       color: white;
-      font-size: 20px;
+      font-size: 2rem;
       margin-bottom: 17px; }
     .home .portfolio-slider-container .about-slide p {
       font-size: 12px;
@@ -251,8 +293,8 @@ header .dropdown {
     top: 0;
     right: 0;
     color: white;
-    font-size: 42px;
-    padding: 5px 20px; }
+    font-size: 35px;
+    padding: 10px 12px; }
   .articles .articles-slide-item {
     position: relative;
     text-align: left;
@@ -260,7 +302,7 @@ header .dropdown {
     padding-bottom: 45px; }
     .articles .articles-slide-item h2 {
       padding: 20px 28px 12px;
-      font-size: 26px;
+      font-size: 2.6rem;
       line-height: 30px; }
     .articles .articles-slide-item p {
       padding: 0 28px;
@@ -268,34 +310,34 @@ header .dropdown {
       line-height: 26px; }
   .articles a {
     position: absolute;
-    font-size: 70px;
+    font-size: 48px;
     top: 40%; }
     .articles a.lSPrev {
       left: -5%; }
     .articles a.lSNext {
       right: -5%; }
 
-.staff {
+.someEntry {
   background-color: white;
   padding: 31px 50px 80px;
   text-align: left;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   position: relative; }
-  .staff p {
+  .someEntry p {
     font-size: 12px;
     line-height: 21px; }
-  .staff h2 {
+  .someEntry h2 {
     font-size: 30px;
-    margin-bottom: 18px; }
-    .staff h2 + p {
+    margin-bottom: 26px; }
+    .someEntry h2 + p {
       line-height: 26px;
       font-size: 14px; }
-  .staff a {
+  .someEntry a {
     font-size: 14px;
     color: red;
     padding-bottom: 42px;
     display: inline-block; }
-  .staff .add {
+  .someEntry .add {
     position: absolute;
     top: 0;
     left: 0;
@@ -303,7 +345,8 @@ header .dropdown {
     padding: 2px 10px;
     font-size: 26px;
     color: white; }
-  .staff footer {
+  .someEntry footer {
+    color: grey;
     font-size: 13px;
     position: absolute;
     left: 0;
@@ -312,17 +355,17 @@ header .dropdown {
     padding: 14px 25px;
     border: 1px solid lightgrey;
     background-color: #ebebeb; }
-    .staff footer .like {
+    .someEntry footer .like {
       float: right; }
-      .staff footer .like .fa {
+      .someEntry footer .like .fa {
         color: red; }
 
 .post {
-  margin-bottom: 100px;
+  margin-bottom: 102px;
   text-align: left;
   background-color: white; }
   .post .content {
-    padding: 36px 52px 90px; }
+    padding: 36px 52px 92px; }
   .post .img-area {
     position: relative; }
     .post .img-area .buttons {
@@ -340,28 +383,31 @@ header .dropdown {
         .post .img-area .buttons button.add {
           margin: -4px; }
   .post h2 {
-    font-size: 31px;
-    margin-bottom: 36px; }
+    font-size: 3.1rem;
+    margin-bottom: 16px; }
   .post p {
     line-height: 24px;
     font-size: 14px; }
   .post a {
+    font-size: 12px;
     padding-top: 5px;
     display: inline-block;
     color: red; }
 
 .sidebar {
   text-align: left;
-  float: right;
-  width: 32%;
-  margin-left: 2%;
   color: white; }
+  @media only screen and (min-width: 768px) {
+    .sidebar {
+      float: right;
+      width: 32%;
+      margin-left: 2%; } }
   .sidebar .state {
     padding-bottom: 45px;
     margin-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.8); }
     .sidebar .state h2 {
-      padding: 20px 28px 15px;
+      padding: 24px 28px 15px;
       font-size: 26px;
       line-height: 30px; }
     .sidebar .state p {
@@ -373,7 +419,8 @@ header .dropdown {
     margin-bottom: 5px;
     background-color: white;
     color: black;
-    border-left: 2px solid grey; }
+    border-left: 2px solid grey;
+    font-size: 12px; }
     .sidebar .sidebar-menu li a:hover {
       color: #f26c4f; }
   .sidebar .sidebar-menu span {
@@ -389,6 +436,13 @@ footer {
     display: inline-block; }
   footer nav {
     float: right; }
+    @media only screen and (max-width: 767px) {
+      footer nav {
+        display: none; } }
+    footer nav a {
+      padding: 30px 24px 25px; }
+    footer nav li:last-child a:after {
+      content: none; }
   footer .footer-links {
     margin: 52px 0 20px;
     text-align: left;

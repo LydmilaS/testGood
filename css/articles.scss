@@ -11,8 +11,8 @@
 		top: 0;
 		right: 0;
 		color: white;
-	    font-size: 42px;
-    	padding: 5px 20px;
+	    font-size: 35px;
+    	padding: 10px 12px;
 	}
 	
 	.articles-slide-item {
@@ -24,7 +24,7 @@
 
 		h2 {
 		    padding: 20px 28px 12px;
-		    font-size: 26px;
+		    font-size: 2.6rem;
 		    line-height: 30px;
 		}
 
@@ -37,7 +37,7 @@
 
 	a {
 	    position: absolute;
-	    font-size: 70px;
+	    font-size: 48px;
 	    top: 40%;
 	    
 	    &.lSPrev {

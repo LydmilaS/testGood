@@ -1,14 +1,15 @@
 .post {
-	margin-bottom: 100px;
+	margin-bottom: 102px;
     text-align: left;
     background-color: white;
     
     .content {
-    	padding: 36px 52px 90px; 
+    	padding: 36px 52px 92px; 
     }
     
     .img-area {
     	position: relative;
+    	
     	.buttons{
     		position: absolute;
     		bottom: 0;
@@ -31,8 +32,8 @@
     	}
     }
     h2 {
-	    font-size: 31px;
-	    margin-bottom: 36px; 
+	    font-size: 3.1rem;
+	    margin-bottom: 16px; 
 	}
 
 	p {
@@ -41,6 +42,7 @@
 	}
 
 	a {
+		font-size: 12px; 
 	    padding-top: 5px;
 	    display: inline-block;
 	    color: red;

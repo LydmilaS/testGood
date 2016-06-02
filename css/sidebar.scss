@@ -1,9 +1,12 @@
 .sidebar {
     text-align: left;
-    float: right;
-    width: 32%; 
-    margin-left: 2%; 
     color: white;
+    
+     @include breakpoint(min-width, $bp-medium) {
+        float: right;
+        width: 32%; 
+        margin-left: 2%; 
+    }
     
     
     .state {
@@ -12,7 +15,7 @@
     	background-color: rgba(0, 0, 0, 0.8); 
      
     	h2 {
-		    padding: 20px 28px 15px;
+		    padding: 24px 28px 15px;
 		    font-size: 26px;
 		    line-height: 30px;
 		} 
@@ -31,6 +34,7 @@
 		    background-color: white;
 		    color: black;
 		    border-left: 2px solid grey; 
+            font-size: 12px; 
             
             a:hover {
                 color: $primary-color;

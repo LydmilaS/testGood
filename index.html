@@ -12,10 +12,9 @@
 	<link type="text/css" rel="stylesheet" href="css/lightslider.css" />   
 	<link href="css/style.css" rel="stylesheet">
     <script src="js/topmenu.js"></script>
-    
 </head>
 <body>
-	<header>
+    <header>
 		<section class="top-header">
 			<div class="container">
 				<div class="logo">
@@ -46,15 +45,17 @@
 		        <a href="javascript:void(0);" class="quick"> Quicklinks <i class="fa fa-map-marker" aria-hidden="true"></i></a>
 		        <div class="dropdown">
 					<span>Select from dropdown</span>
-					    <div class="dropdown-content">
-						    <ul>
-				        		<li><a href="javascript:void(0);">Number 1</a></li>
-				        		<li><a href="javascript:void(0);">Number 2</a></li>
-				        		<li><a href="javascript:void(0);">Number 3</a></li>
-				        		<li><a href="javascript:void(0);">Number 4</a></li>
-				        		<li><a href="javascript:void(0);">Number 5</a></li>
-				        	</ul>
-					  </div>
+					<ul id="myDropdown" class="dropdown-content">
+				        <li><a href="javascript:void(0);">Number 1</a></li>
+				       	<li><a href="javascript:void(0);">Number 2</a></li>
+				       	<li><a href="javascript:void(0);">Number 3</a></li>
+				       	<li><a href="javascript:void(0);">Number 4</a></li>
+				       	<li><a href="javascript:void(0);">Number 5</a></li>
+				    </ul>
+				    <div class="arrows">
+				    	<button class="fa fa-angle-up up dropbtn" onclick="myFunction()"></button>
+				    	<button class="fa fa-angle-down down dropbtn" onclick="myFunction()"></button>
+				    </div>
 				</div>
 			</div>
 		</section>
@@ -124,25 +125,25 @@
 				</div>
 			</div>
 			<script>
-    	 $(document).ready(function() {
-            $('#portfolio-slider').lightSlider({
-                gallery:true,
-                item:1,
-                thumbItem:0,
-                slideMargin: 0,
-                speed:400,
-                sliderContainer:'.portfolio-slider-container',
-                pauseOnHover: true,
-                auto:true,
-                loop:true,
-                pause: 5000,
-                pager: false,
-                onSliderLoad: function() {
-                    $('#portfolio-slider').removeClass('cS-hidden');
-                }  
-            });
-		});
-    </script>
+	    	 $(document).ready(function() {
+	            $('#portfolio-slider').lightSlider({
+	                gallery:true,
+	                item:1,
+	                thumbItem:0,
+	                slideMargin: 0,
+	                speed:400,
+	                sliderContainer:'.portfolio-slider-container',
+	                pauseOnHover: true,
+	                auto:true,
+	                loop:true,
+	                pause: 5000,
+	                pager: false,
+	                onSliderLoad: function() {
+	                    $('#portfolio-slider').removeClass('cS-hidden');
+	                }  
+	            });
+			});
+	    </script>
 		</div>
 	</section>
 	<section class="articles">
@@ -208,7 +209,7 @@
 	</section>
 	<div class="container wrap">
 		<div class="main-contant">
-	<section class="staff">
+	<section class="someEntry">
 			<h2>Nice text bosage here</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat neque asperiores. Quam mollitia, blanditiis vero at eaque incidunt. </p>
 			<a href="#">Check leo dignissim+</a>
@@ -264,8 +265,8 @@
 	</div>
 	</div>
 	<footer>
-		<div class="container">
 		<div class="menu-footer">
+		<div class="container">
 			<div class="logo">
 				<a href="javascript:void(0);"><span>g</span>Good Inc.</a>
 			</div>
@@ -278,7 +279,9 @@
 		                <li><a href="javascript:void(0);">Contact</a></li>
 		            </ul>
 		        </nav>
+		    </div>
 		</div>
+		<div class="container">
 		<ul class="footer-links">
 			<li><a href="">About us</a></li>
 			<li><a href="">Footer Links here</a></li>

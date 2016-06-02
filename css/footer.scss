@@ -13,9 +13,18 @@ footer {
 	
 	nav {
 		float: right;
+		
+		@include breakpoint(max-width, 767px) {
+                display: none;
+            }
 
 		a {
 			@extend %main-nav-link;
+			padding: 30px 24px 25px;
+		}
+
+		li:last-child  a:after {
+			content: none;
 		}
 	}
 

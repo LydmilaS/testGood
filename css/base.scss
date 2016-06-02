@@ -1,11 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
-
 * {
     -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
             box-sizing: border-box; 
 }
 
+html {
+    font-size: 50%;
+     
+    @include breakpoint(min-width, $bp-medium) {
+        font-size: 62.5%; 
+    }
+}
 body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;  
@@ -19,8 +24,9 @@ button {
 }
 
 .container {
-    max-width: 940px;
+    max-width: 970px;
     text-align: center;
+    padding: 0 15px; 
     margin: 0 auto;
 }
 
@@ -41,10 +47,17 @@ a {
 }
 
 .main-contant {
-    width: 66%; 
-    float: left;
+    @include breakpoint(min-width, $bp-medium) {
+        width: 66%;
+        float: left;
+    }
 }
 
 .wrap {
     overflow: hidden;
+}
+
+.lSPrev,
+.lSNext {
+    cursor: pointer;
 }
