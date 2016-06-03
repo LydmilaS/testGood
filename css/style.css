@@ -137,6 +137,9 @@ header .search {
   header .search input {
     padding: 14px 40px 14px 14px;
     font-size: 14px; }
+    @media only screen and (min-width: 768px) {
+      header .search input {
+        width: 300px; } }
   header .search button {
     position: absolute;
     right: 0;

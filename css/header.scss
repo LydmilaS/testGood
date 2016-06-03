@@ -12,9 +12,13 @@ header {
     	float: right;
         padding-top: 10px;
     	
-    	input {
+    	input { 
     		padding: 14px 40px 14px 14px;
             font-size: 14px;
+            
+            @include breakpoint(min-width, $bp-medium) {
+                width: 300px;
+            }
     	}
     	
     	button {
