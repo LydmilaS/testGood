@@ -1,0 +1,25 @@
+button {
+	background: none;
+	border: none;
+	margin: 30px auto;
+    cursor: pointer;
+}
+body {
+	text-align: center;
+}
+button:not(#login) {
+	width: 119px;
+	color: white;
+    padding: 5px;
+    text-shadow: 0 -1px 1px #777;
+    outline: none;
+    border: 1px solid rgb(92, 130, 171);
+    border-radius: 2px;
+    background-color: rgb(109, 141, 177);;
+}
+
+#list li {
+	text-align: left;
+	padding: 5px;
+	font-style: italic;
+}
