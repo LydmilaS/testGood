@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>vk</title>
+    <script src="https://vk.com/js/api/openapi.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function init() {
+            console.log(1);
+            VK.init({
+                apiId: 5493162
+            });
+        }
+    </script>
+</head>
+<body onload="init()">
+	<div id="login_button" onclick="VK.Auth.login(authInfo);"></div>
+	<button onclick="VK.Auth.logout(exit);">exit</button>
+	<button onclick="getFiends()">Получить список друзей</button>
+	<script language="javascript">
+		function authInfo(response) {
+		  if (response.session) {
+		    alert('user: '+response.session.mid);
+		  } else {
+		    alert('not auth');
+		  }
+		}
+
+		function exit() {
+		  alert('you left app');
+		}
+
+		VK.Auth.getLoginStatus(authInfo);
+
+		VK.UI.button('login_button');
+
+		function getFiends() {
+		    VK.Api.call('friends.get', {uids: 172823}, function (r) {
+		        console.log(r);
+		    });
+		}
+	</script>
+
+</body>
+</html>
