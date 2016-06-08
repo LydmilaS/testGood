@@ -33,7 +33,6 @@ function getFiends() {
 
             for (i = 0; i < data.response.length; i++) {
 
-                var item = data.response[i].last_name + " " + data.response[i].first_name;
                 //создадим объект
                 var friend = {
                     first_name: data.response[i].first_name,
@@ -47,7 +46,14 @@ function getFiends() {
                 var returnFriend = JSON.parse(localStorage.getItem(i)) //спарсим его обратно объект
 					
                 if(returnFriend) {
-                    $('#local').append("<li>" + " " + item + "</li>");
+                    $('#local').append(
+                        "<li>" + 
+                            "<form action=''>"+
+                                "<input type='text' class='last_name' value='' placeholder='last_name' onchange='localStorage.setItem(i, this.value);'/>"+
+                                "<input type='text' class='first_name' value='' placeholder='first_name' onchange='localStorage.setItem(i, this.value);'/>"+
+                            "</form>" + 
+                            friend.last_name + " " + friend.first_name + 
+                        "</li>");
                 } else {
                     $('#list').append("<li>" + " " + item + "</li>");
                 }

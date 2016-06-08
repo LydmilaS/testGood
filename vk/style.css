@@ -24,3 +24,7 @@ button:not(#login) {
 	padding: 5px;
 	font-style: italic;
 }
+
+input {
+	margin: 10px;
+}
