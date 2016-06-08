@@ -18,7 +18,8 @@ button:not(#login) {
     background-color: rgb(109, 141, 177);;
 }
 
-#list li {
+#list li,
+#local li {
 	text-align: left;
 	padding: 5px;
 	font-style: italic;
